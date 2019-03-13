@@ -1186,8 +1186,9 @@ void helper_uc_tracecode(int32_t size, uc_hook_type type, void *handle, int64_t 
     }
 }
 
+// [port] CHANGED: `uint32_t` -> `uc_err`.
 UNICORN_EXPORT
-uint32_t uc_mem_regions(uc_engine *uc, uc_mem_region **regions, uint32_t *count)
+uc_err uc_mem_regions(uc_engine *uc, uc_mem_region **regions, uint32_t *count)
 {
     uint32_t i;
     uc_mem_region *r = NULL;

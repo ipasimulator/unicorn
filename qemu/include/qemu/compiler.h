@@ -25,7 +25,8 @@
 #endif
 
 
-static double rint( double x )
+// [port] CHANGED: Added `inline`.
+static inline double rint( double x )
 {
     return floor(x < 0 ? x - 0.5 : x + 0.5);
 }
