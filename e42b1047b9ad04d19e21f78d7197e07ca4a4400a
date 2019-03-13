@@ -1,0 +1,10 @@
+[ver:1,total:780]
+CMakeLists.txt:310,1552467600:310,m
+uc.c:140,1552467600:140,m
+msvc.bat:90,1552467600:90,r
+qemu/include/qemu/compiler.h:60,1552467600:60,m
+windows_export.bat:60,1552467600:60,r
+msvc/unicorn/unicorn/unicorn.vcxproj:50,1552467600:50,r
+msvc/unicorn/config-host.h:30,1552467600:30,r
+msvc/unicorn/qapi-types.c:20,1552467600:20,r
+msvc/unicorn/prebuild_script.bat:20,1552467600:20,r
