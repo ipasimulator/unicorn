@@ -1,0 +1,13 @@
+[ver:1,total:1500]
+CMakeLists.txt:875,1552467600:471,1552471200:404,m
+msvc/unicorn/armeb-softmmu/armeb-softmmu.vcxproj:205,1552467600:6,1552471200:199,r
+include/unicorn/platform.h:120,1552467600:120,r
+msvc/unicorn/arm-softmmu/arm-softmmu.vcxproj:105,1552467600:78,1552471200:27,r
+msvc/unicorn/unicorn/unicorn.vcxproj:50,1552467600:35,1552471200:15,r
+include/unicorn/unicorn.h:40,1552467600:40,r
+qemu/include/qemu/compiler.h:30,1552467600:30,r
+msvc/unicorn/aarch64-softmmu/aarch64-softmmu.vcxproj:21,1552467600:21,r
+uc.c:15,1552471200:15,r
+msvc/unicorn/aarch64-softmmu/config-target.h:15,1552467600:15,r
+msvc/unicorn/armeb-softmmu/config-target.h:12,1552467600:12,r
+msvc/unicorn/arm-softmmu/config-target.h:12,1552467600:12,r
