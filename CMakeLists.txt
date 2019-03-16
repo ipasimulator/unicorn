@@ -48,8 +48,8 @@ target_include_directories (unicorn
     PUBLIC include
     PRIVATE msvc/unicorn qemu qemu/include qemu/tcg)
 
-# From `unicorn.vcxproj`
 target_compile_definitions (unicorn PRIVATE
+    # From `unicorn.vcxproj`
     WIN32
     _WINDOWS
     _USRDLL

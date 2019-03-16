@@ -113,10 +113,11 @@ static void arm_cpu_reset(CPUState *s)
         env->pc = cpu->rvbar;
 #endif
     } else {
-#if defined(CONFIG_USER_ONLY)
+        // [port] CHANGED: Enabled even if `!defined(CONFIG_USER_ONLY)`.
+//#if defined(CONFIG_USER_ONLY)
         /* Userspace expects access to cp10 and cp11 for FP/Neon */
         env->cp15.c1_coproc = deposit64(env->cp15.c1_coproc, 20, 4, 0xf);
-#endif
+//#endif
     }
 
 #if defined(CONFIG_USER_ONLY)
@@ -173,7 +174,8 @@ static void arm_cpu_reset(CPUState *s)
         env->regs[15] = 0xFFFF0000;
     }
 
-    env->vfp.xregs[ARM_VFP_FPEXC] = 0;
+    // [port] CHANGED: `0` -> `1 << 30` to enable the VFP11 coprocessor.
+    env->vfp.xregs[ARM_VFP_FPEXC] = 1 << 30;
 #endif
     set_flush_to_zero(1, &env->vfp.standard_fp_status);
     set_flush_inputs_to_zero(1, &env->vfp.standard_fp_status);
