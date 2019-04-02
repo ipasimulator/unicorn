@@ -45,8 +45,10 @@ add_prep_dep (unicorn)
 
 target_include_directories (unicorn
     # From `unicorn.vcxproj`
-    PUBLIC include
     PRIVATE msvc/unicorn qemu qemu/include qemu/tcg)
+library_headers (unicorn
+    # From `unicorn.vcxproj`
+    include)
 
 target_compile_definitions (unicorn PRIVATE
     # From `unicorn.vcxproj`
