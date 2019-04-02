@@ -1,0 +1,7 @@
+[ver:1,total:2040]
+CMakeLists.txt:600,1554195600:120,1554199200:480,m
+include/unicorn/arm.h:420,1552741200:180,1554148800:240,r
+qemu/target-arm/cpu.c:420,1552734000:420,r
+qemu/target-arm/translate.c:240,1552734000:240,r
+include/unicorn/platform.h:180,1552849200:180,r
+qemu/target-arm/unicorn_arm.c:180,1553418000:180,r
