@@ -96,6 +96,7 @@ add_library (arm-softmmu STATIC
     qemu/tcg/optimize.c
     qemu/tcg/tcg.c
     qemu/translate-all.c)
+add_prep_dep (arm-softmmu)
 
 target_include_directories (arm-softmmu PRIVATE
     # From `arm-softmmu.vcxproj`
@@ -142,6 +143,7 @@ add_library (armeb-softmmu STATIC
     qemu/tcg/optimize.c
     qemu/tcg/tcg.c
     qemu/translate-all.c)
+add_prep_dep (armeb-softmmu)
 
 target_include_directories (armeb-softmmu PRIVATE
     # From `armeb-softmmu.vcxproj`
