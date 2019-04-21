@@ -53,6 +53,7 @@ library_headers (unicorn
 target_compile_definitions (unicorn PRIVATE
     # From `unicorn.vcxproj`
     WIN32
+    $<IF:$<CONFIG:Debug>,_DEBUG,NDEBUG>
     _WINDOWS
     _USRDLL
     UNICORN_DLL_EXPORTS
@@ -106,6 +107,7 @@ target_include_directories (arm-softmmu PRIVATE
 target_compile_definitions (arm-softmmu PRIVATE
     # From `arm-softmmu.vcxproj`
     WIN32
+    $<IF:$<CONFIG:Debug>,_DEBUG,NDEBUG>
     _LIB
     __i386__
     _CRT_SECURE_NO_WARNINGS
@@ -153,6 +155,7 @@ target_include_directories (armeb-softmmu PRIVATE
 target_compile_definitions (armeb-softmmu PRIVATE
     # From `armeb-softmmu.vcxproj`
     WIN32
+    $<IF:$<CONFIG:Debug>,_DEBUG,NDEBUG>
     _LIB
     __i386__
     _CRT_SECURE_NO_WARNINGS
